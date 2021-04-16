@@ -1,0 +1,19 @@
+<?php
+$formType = $_GET[‘fType’];
+$fullName = $_GET[‘fullName’];
+$program = $_GET[‘program’];
+echo (‘<p>’);
+echo (‘Hello,’.$fullName. “<br>\n”);
+echo (‘You are in the ’.$program.‘ program.“<br>\n”);
+echo (‘Form method was ‘.$formType. “</p>\n”);
+?>
+
+<?php
+$to = $_POST[‘toEmail’];
+$firstName = $_POST[‘firstName’];
+$lastName = $_POST[‘lastName’];
+$comment = addslashes($_POST[‘comment’]);
+echo (‘<p>’);
+echo (‘Thank you,’.$firstName. ‘ for your feedback\.’);
+echo ( “</p>\n”);
+?>
